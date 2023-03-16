@@ -1,0 +1,337 @@
+{
+    "phase": 1, 
+    "question": "What school did Patrick O'Bryant play for?", 
+    "sql": {
+        "agg": 0,
+        "conds": {
+        "column_index": [
+            0
+        ],
+        "condition": [
+            "Patrick O'Bryant"
+        ],
+        "operator_index": [
+            0
+        ]
+        },
+        "human_readable": "SELECT School/Club Team FROM table WHERE Player = Patrick O'Bryant",
+        "sel": 5
+    },
+    "table": {
+        "caption": "O",
+        "header": [
+        "Player",
+        "No.",
+        "Nationality",
+        "Position",
+        "Years in Toronto",
+        "School/Club Team"
+        ],
+        "id": "1-10015132-14",
+        "name": "table_10015132_14",
+        "page_id": "",
+        "page_title": "Toronto Raptors all-time roster",
+        "rows": [
+        [
+            "Patrick O'Bryant",
+            "13",
+            "United States",
+            "Center",
+            "2009-10",
+            "Bradley"
+        ],
+        [
+            "Jermaine O'Neal",
+            "6",
+            "United States",
+            "Forward-Center",
+            "2008-09",
+            "Eau Claire High School"
+        ],
+        [
+            "Dan O'Sullivan",
+            "45",
+            "United States",
+            "Center",
+            "1995-96",
+            "Fordham"
+        ],
+        [
+            "Charles Oakley",
+            "34",
+            "United States",
+            "Forward",
+            "1998-2001",
+            "Virginia Union"
+        ],
+        [
+            "Hakeem Olajuwon",
+            "34",
+            "Nigeria / United States",
+            "Center",
+            "2001-02",
+            "Houston"
+        ]
+        ],
+        "section_title": "O",
+        "types": [
+        "text",
+        "real",
+        "text",
+        "text",
+        "text",
+        "text"
+        ]
+    }
+},
+{
+    "phase": 1,
+    "question": "What position did the player from Baylor play?",
+    "sql":{
+        "agg": 0,
+        "conds": {
+        "column_index": [
+            5
+        ],
+        "condition": [
+            "Baylor"
+        ],
+        "operator_index": [
+            0
+        ]
+        },
+        "human_readable": "SELECT Position FROM table WHERE School/Club Team = Baylor",
+        "sel": 3
+    },
+    "table": {
+        "caption": "A",
+        "header": [
+        "Player",
+        "No.",
+        "Nationality",
+        "Position",
+        "Years in Toronto",
+        "School/Club Team"
+        ],
+        "id": "1-10015132-1",
+        "name": "table_10015132_1",
+        "page_id": "",
+        "page_title": "Toronto Raptors all-time roster",
+        "rows": [
+        [
+            "Quincy Acy",
+            "4",
+            "United States",
+            "Forward",
+            "2012-present",
+            "Baylor"
+        ],
+        [
+            "Hassan Adams",
+            "3",
+            "United States",
+            "Guard-Forward",
+            "2008-09",
+            "Arizona"
+        ],
+        [
+            "Alexis Ajin\u00e7a",
+            "42",
+            "France",
+            "Center",
+            "2011",
+            "Hy\u00e8res-Toulon ( France )"
+        ],
+        [
+            "Solomon Alabi",
+            "50",
+            "Nigeria",
+            "Center",
+            "2010-2012",
+            "Florida State"
+        ],
+        [
+            "Rafer Alston",
+            "11, 12",
+            "United States",
+            "Guard",
+            "2002-03, 2004-05",
+            "Fresno State"
+        ],
+        [
+            "David Andersen",
+            "13",
+            "Australia",
+            "Center",
+            "2010",
+            "Virtus Bologna ( Italy )"
+        ],
+        [
+            "Alan Anderson",
+            "6",
+            "United States",
+            "Guard-Forward",
+            "2012-2013",
+            "Michigan State"
+        ],
+        [
+            "Willie Anderson",
+            "40",
+            "United States",
+            "Guard-Forward",
+            "1995-96",
+            "Georgia"
+        ],
+        [
+            "Rafael Ara\u00fajo",
+            "55",
+            "Brazil",
+            "Center",
+            "2004-06",
+            "BYU"
+        ],
+        [
+            "Robert Archibald",
+            "34",
+            "Scotland",
+            "Center",
+            "2004",
+            "Illinois"
+        ],
+        [
+            "Carlos Arroyo",
+            "21",
+            "Puerto Rico",
+            "Guard",
+            "2001",
+            "Florida International"
+        ]
+        ],
+        "section_title": "A",
+        "types": [
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text"
+        ]
+    }
+}
+{
+    "phase": 1,
+    "question": "How would you answer a second test question?",
+    "sql": {
+        "agg": 0,
+        "conds": {
+            "column_index": [2],
+            "condition": ["Some Entity"],
+            "operator_index": [0]
+        },
+        "human_readable": "SELECT Header1 FROM table WHERE Another Header = Some Entity",
+        "sel": 0
+    },
+    "table": "{\"caption\": \"L\", \"header\": [\"Header1\", \"Header 2\", \"Another Header\"], \"id\": \"1-10015132-9\", \"name\": \"table_10015132_11\", \"page_i..."
+},
+{
+    "phase": 1,
+    "question":"how many times is the fleet series (quantity) is 468-473 (6)?",
+    "sql": {
+        "agg": 3,
+        "conds": {
+        "column_index": [
+            3
+        ],
+        "condition": [
+            "468-473 (6)"
+        ],
+        "operator_index": [
+            0
+        ]
+        },
+        "human_readable": "SELECT COUNT Order Year FROM table WHERE Fleet Series (Quantity) = 468-473 (6)",
+        "sel": 0
+    },
+    "table": {
+        "caption": "Fleet",
+        "header": [
+        "Order Year",
+        "Manufacturer",
+        "Model",
+        "Fleet Series (Quantity)",
+        "Powertrain (Engine/Transmission)",
+        "Fuel Propulsion"
+        ],
+        "id": "1-10007452-3",
+        "name": "table_10007452_3",
+        "page_id": "",
+        "page_title": "Torrance Transit",
+        "rows": [
+        [
+            "1992-93",
+            "Gillig",
+            "Phantom (High Floor)",
+            "444-464 (21)",
+            "DD S50EGR Allison WB-400R",
+            "Diesel"
+        ],
+        [
+            "1996",
+            "Gillig",
+            "Phantom (High Floor)",
+            "465-467 (3)",
+            "DD S50 Allison WB-400R",
+            "Diesel"
+        ],
+        [
+            "1998",
+            "Gillig",
+            "Phantom (High Floor)",
+            "468-473 (6)",
+            "DD S50 Allison WB-400R",
+            "Diesel"
+        ],
+        [
+            "2000",
+            "Gillig",
+            "Advantage (Low Floor)",
+            "474-481 (8)",
+            "Cummins ISC Allison WB-400R",
+            "Diesel"
+        ],
+        [
+            "2002",
+            "Gillig",
+            "Advantage (Low Floor)",
+            "482-492 (11)",
+            "Cummins ISL Allison WB-400R",
+            "Diesel"
+        ],
+        [
+            "2010",
+            "NFI",
+            "GE40LFR",
+            "300-309 (10)",
+            "Ford Triton V10 ISE-Thundervolt TB40-HG",
+            "Hybrid"
+        ],
+        [
+            "2011",
+            "NFI",
+            "C40LFR",
+            "310-329 (20)",
+            "Cummins Westport ISL-G Allison WB-400R",
+            "CNG"
+        ]
+        ],
+        "section_title": "Fleet",
+        "types": [
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text"
+        ]
+    }
+}
