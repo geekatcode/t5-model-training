@@ -1,0 +1,18 @@
+{"question": "What school did Patrick O'Bryant play for?", "sql":"SELECT school FROM table WHERE player = 'Patrick O'Bryant'"}
+{"question": "What club did Patrick O'Bryant play for?", "sql":"SELECT club FROM table WHERE player = 'Patrick O'Bryant'"}
+{"question": "How many cars sold in the year 1997?", "sql":"SELECT count{*) FROM table WHERE year = '1997'"}
+{"question": "What's Dell Curry nationality?","sql":"SELECT nationality FROM table WHERE player = 'Dell Curry'"}
+{"question": "which player is from georgia", "sql":"SELECT player FROM table WHERE state = 'Georgia'"}
+{"question": "What nationality is the player Muggsy Bogues?", "sql":"SELECT nationality FROM table WHERE player = 'Muggsy Bogues'"}
+{"question": "Which years Muggsy Bogues play?", "sql":"SELECT years FROM table WHERE player = 'Muggsy Bogues'"}
+
+
+{"question": "How many cars manufactured in Italy and sold in the year 1997?", "sql":"SELECT count(*) FROM table WHERE country='Italy' AND year = '1997'"}
+{"question": "How many Italian cars were sold in the year 1997?", "sql":"SELECT count{*) FROM table WHERE country='Italy' AND year = '1997'"}
+{"question": "How many times Patrick O'Bryant play in Chicago in 1997?", "sql":"SELECT count(*) FROM table WHERE city='Chicago' AND year = '1997'"}
+{"question": "Count Patrick O'Bryant's games in Chicago in 1997?", "sql":"SELECT count(*) FROM table WHERE city='Chicago' AND year = '1997'"}
+{"question": "Which years Muggsy Bogues play for Chicago Bulls?", "sql":"SELECT years FROM table WHERE player = 'Muggsy Bogues' AND team='Chicago Bulls'"}
+
+
+{"question": "How many times Patrick O'Bryant win in Chicago in 1997?", "sql":"SELECT count(*) FROM table WHERE city='Chicago' AND year = '1997' AND result='win'"}
+{"question": "Count Patrick O'Bryant's wins in Chicago in 1997?", "sql":"SELECT count(*) FROM table WHERE city='Chicago' AND year = '1997' AND result='win'"}
