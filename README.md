@@ -1,5 +1,5 @@
 # t5 model training
-Fine tuning pre trained T5 model
+Training & Fine tuning T5 base model for NLP
 
 Base Model:
 - T5 (https://huggingface.co/t5-base)
