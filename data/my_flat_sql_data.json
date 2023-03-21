@@ -1,18 +1,27 @@
-{"question": "What school did Patrick O'Bryant play for?", "sql":"SELECT school FROM table WHERE player = 'Patrick O'Bryant'"}
-{"question": "What club did Patrick O'Bryant play for?", "sql":"SELECT club FROM table WHERE player = 'Patrick O'Bryant'"}
-{"question": "How many cars sold in the year 1997?", "sql":"SELECT count{*) FROM table WHERE year = '1997'"}
-{"question": "What's Dell Curry nationality?","sql":"SELECT nationality FROM table WHERE player = 'Dell Curry'"}
-{"question": "which player is from georgia", "sql":"SELECT player FROM table WHERE state = 'Georgia'"}
-{"question": "What nationality is the player Muggsy Bogues?", "sql":"SELECT nationality FROM table WHERE player = 'Muggsy Bogues'"}
-{"question": "Which years Muggsy Bogues play?", "sql":"SELECT years FROM table WHERE player = 'Muggsy Bogues'"}
+{"task":"translation","question": "What school did Patrick O'Bryant play for?", "ans":"SELECT school FROM player_profile WHERE player = 'Patrick O'Bryant'"}
+{"task":"translation","question": "What club did Patrick O'Bryant play for?", "ans":"SELECT club FROM player_profile WHERE player = 'Patrick O'Bryant'"}
+{"task":"translation","question": "How many cars sold in the year 1997?", "ans":"SELECT count{*) FROM line_item WHERE DATE_PART('YEAR', order_date)= 1997"}
+{"task":"translation","question": "What's Dell Curry nationality?","ans":"SELECT nationality FROM player_profile WHERE player = 'Dell Curry'"}
+{"task":"translation","question": "which player is from Georgia", "ans":"SELECT player FROM player_profile WHERE state = 'Georgia'"}
+{"task":"translation","question": "What nationality is the player Muggsy Bogues?", "ans":"SELECT nationality FROM player_profile WHERE player = 'Muggsy Bogues'"}
+{"task":"translation","question": "Which years Muggsy Bogues play?", "ans":"SELECT years FROM table WHERE player = 'Muggsy Bogues'"}
+{"task":"translation","question": "How many customers orderded in 1998?", "ans":"SELECT count(customer_id) FROM order WHERE DATE_PART('YEAR', order_date)= 1998"}
+{"task":"translation","question": "Count customer who orderded in the year 1997?.", "ans":"SELECT count(customer_id) FROM order WHERE DATE_PART('YEAR', order_date)= 1997'"}
+{"task":"translation","question": "How many cars were sold in the year 2001?", "ans":"SELECT count{*) FROM order WHERE DATE_PART('YEAR', order_date)= 2001"}
 
 
-{"question": "How many cars manufactured in Italy and sold in the year 1997?", "sql":"SELECT count(*) FROM table WHERE country='Italy' AND year = '1997'"}
-{"question": "How many Italian cars were sold in the year 1997?", "sql":"SELECT count{*) FROM table WHERE country='Italy' AND year = '1997'"}
-{"question": "How many times Patrick O'Bryant play in Chicago in 1997?", "sql":"SELECT count(*) FROM table WHERE city='Chicago' AND year = '1997'"}
-{"question": "Count Patrick O'Bryant's games in Chicago in 1997?", "sql":"SELECT count(*) FROM table WHERE city='Chicago' AND year = '1997'"}
-{"question": "Which years Muggsy Bogues play for Chicago Bulls?", "sql":"SELECT years FROM table WHERE player = 'Muggsy Bogues' AND team='Chicago Bulls'"}
+{"task":"translation","question": "How many cars manufactured in Italy and sold in the year 1997?", "ans":"SELECT count(*) FROM order WHERE country='Italy' AND DATE_PART('YEAR', order_date)= 1997"}
+{"task":"translation","question": "Count the number of games Patrick O'Bryant played in Chicago in 1975?", "ans":"SELECT count(*) FROM game_stats WHERE city='Chicago' AND DATE_PART('YEAR', play_date)= 1975"}
+{"task":"translation","question": "Which years Muggsy Bogues play for Chicago Bulls?", "ans":"SELECT DATE_PART('YEAR', play_date) as years FROM game_stats WHERE player = 'Muggsy Bogues' AND team='Chicago Bulls'"}
+{"task":"translation","question": "How many customers orderded in 1992 from California?", "ans":"SELECT count(customer_id) FROM order WHERE order_state='California' AND DATE_PART('YEAR', order_date)= 1992"}
+{"task":"translation","question": "Which customers orderded in 2015 from California?", "ans":"SELECT customer_id FROM order WHERE order_state='California' AND DATE_PART('YEAR', order_date)= 2015"}
+{"task":"translation","question": "List customers who orderded in 2008 from California?", "ans":"SELECT customer_id FROM order WHERE order_state='California' AND DATE_PART('YEAR', order_date)= 2008"}
+{"task":"translation","question": "How many orders in 2001 from California?", "ans":"SELECT count(*) FROM orders WHERE order_state='California' AND DATE_PART('YEAR', order_date)= 2001"}
 
 
-{"question": "How many times Patrick O'Bryant win in Chicago in 1997?", "sql":"SELECT count(*) FROM table WHERE city='Chicago' AND year = '1997' AND result='win'"}
-{"question": "Count Patrick O'Bryant's wins in Chicago in 1997?", "sql":"SELECT count(*) FROM table WHERE city='Chicago' AND year = '1997' AND result='win'"}
+{"task":"translation","question": "How many times Patrick O'Bryant play in Chicago in 1997?", "ans":"SELECT count(*) FROM game_stats WHERE player = 'Patrick O'Bryant' AND city='Chicago' AND DATE_PART('YEAR', order_date)= 1997"}
+{"task":"translation","question": "How many times Patrick O'Bryant win in Chicago in 1987?", "ans":"SELECT count(*) FROM game_stats WHERE city='Chicago' AND result='win' AND DATE_PART('YEAR', order_date)= 1987"}
+{"task":"translation","question": "Count Patrick O'Bryant's wins in Chicago in 1995?", "ans":"SELECT count(*) FROM game_stats WHERE city='Chicago' AND result='win' AND DATE_PART('YEAR', order_date)= 1975"}
+
+
+{"task":"translation","question": "Count Patrick O'Bryant's wins in Chicago in 1995?. Use result field in game_stats table.", "ans":"SELECT count(*) FROM game_stats WHERE player ='Patrick O'Bryant's' AND city='Chicago' AND DATE_PART('YEAR', order_date)= 1995 AND result='win'"}
