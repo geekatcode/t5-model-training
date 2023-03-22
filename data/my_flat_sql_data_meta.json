@@ -32,4 +32,4 @@
 {"question": "Name teams that had wins in 2007", "tables":"game_stats, team","sql":"SELECT team_name FROM team WHERE team_id IN (SELECT unique(team_id) FROM game_stats WHERE result='win' AND DATE_PART('YEAR', play_date)= 2007)"}
 {"question": "Name teams that did not win in 2007", "tables":"game_stats, team","sql":"SELECT team_name FROM team WHERE team_id NOT IN (SELECT unique(team_id) FROM game_stats WHERE result='win' AND DATE_PART('YEAR', play_date)= 2007)"}
 {"question": "Which customers ordered in 2007", "tables":"customer, order","sql":"SELECT cust_name FROM customer WHERE cust_id IN (SELECT cust_id FROM order WHERE EXTRACT(YEAR FROM order_date) = 2007)"}
-{"question": "Which customers did not ordered in 2007", "tables":"customer, order","sql":"SELECT cust_name FROM customer WHERE cust_id NOT IN (SELECT cust_id FROM order WHERE EXTRACT(YEAR FROM order_date) = 2007)"}
+{"question": "Which customers did not order in 2007", "tables":"customer, order","sql":"SELECT cust_name FROM customer WHERE cust_id NOT IN (SELECT cust_id FROM order WHERE EXTRACT(YEAR FROM order_date) = 2007)"}
